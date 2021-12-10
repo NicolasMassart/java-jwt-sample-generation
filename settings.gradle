@@ -1,0 +1,3 @@
+rootProject.name = 'jwt'
+include 'gen-keys'
+

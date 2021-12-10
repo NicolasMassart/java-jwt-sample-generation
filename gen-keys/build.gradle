@@ -1,0 +1,20 @@
+plugins {
+    id 'application'
+}
+
+group 'net.consensys.doc.example.jwt'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(platform("io.vertx:vertx-stack-depchain:4.2.1"))
+    implementation("io.vertx:vertx-core")
+    implementation("io.vertx:vertx-auth-jwt")
+}
+
+application {
+    mainClass = 'jwt.GenerateJWT'
+}
